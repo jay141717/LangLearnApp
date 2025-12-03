@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1104</width>
+    <height>781</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackMain">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1101</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="pageHome">
+     <widget class="QLabel" name="lblAppName">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>160</y>
+        <width>311</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>28</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>SPANGO</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnStart">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>380</y>
+        <width>200</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start Learning</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pageTranslate">
+     <widget class="QPushButton" name="btnTheme">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>51</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>🌓</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupGrid">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>801</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QTableWidget" name="tableSentence">
+         <property name="editTriggers">
+          <set>QAbstractItemView::AllEditTriggers</set>
+         </property>
+         <property name="alternatingRowColors">
+          <bool>true</bool>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="rowCount">
+          <number>10</number>
+         </property>
+         <property name="columnCount">
+          <number>7</number>
+         </property>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+         <item row="0" column="2">
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+         <item row="0" column="3">
+          <property name="text">
+           <string>SUBJECT</string>
+          </property>
+         </item>
+         <item row="1" column="2">
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+         <item row="1" column="3">
+          <property name="text">
+           <string>SUBJECT ATTR</string>
+          </property>
+         </item>
+         <item row="2" column="2">
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+         <item row="2" column="3">
+          <property name="text">
+           <string>VERB</string>
+          </property>
+         </item>
+         <item row="3" column="2">
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+         <item row="3" column="3">
+          <property name="text">
+           <string>OBJECT</string>
+          </property>
+         </item>
+         <item row="4" column="2">
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+         <item row="4" column="3">
+          <property name="text">
+           <string>OBJECT ATTR</string>
+          </property>
+         </item>
+         <item row="5" column="2">
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+         <item row="5" column="3">
+          <property name="text">
+           <string>TIME</string>
+          </property>
+         </item>
+         <item row="6" column="2">
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+         <item row="6" column="3">
+          <property name="text">
+           <string>PLACE</string>
+          </property>
+         </item>
+         <item row="7" column="2">
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+         <item row="7" column="3">
+          <property name="text">
+           <string>MANNER</string>
+          </property>
+         </item>
+         <item row="8" column="3">
+          <property name="text">
+           <string>DEGREE</string>
+          </property>
+         </item>
+         <item row="9" column="3">
+          <property name="text">
+           <string>INTERJ / PHRASE</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="btnAddManualRow">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>530</y>
+        <width>767</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Add Row</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="txtEnglishFull">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>570</y>
+        <width>571</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>70</height>
+       </size>
+      </property>
+      <property name="placeholderText">
+       <string>Type the full English sentence here...</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="txtSpanishFull">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>30</y>
+        <width>571</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>70</height>
+       </size>
+      </property>
+      <property name="placeholderText">
+       <string>Escribe aquí la oración completa en español… </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnRandomEnglish">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>570</y>
+        <width>200</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Practice En to Sp</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnPlayFullSpanish">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>30</y>
+        <width>61</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>🔊</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnRandomSpanish">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>30</y>
+        <width>201</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Practice Sp to En</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnAddRow">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>170</y>
+        <width>181</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnSubmit">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>210</y>
+        <width>181</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>120</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Submit</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBooks">
+      <property name="geometry">
+       <rect>
+        <x>956</x>
+        <y>0</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Select book</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnNextSentence">
+      <property name="geometry">
+       <rect>
+        <x>956</x>
+        <y>40</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Next →</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnRestartBook">
+      <property name="geometry">
+       <rect>
+        <x>956</x>
+        <y>80</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Restart Book</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblInstructions">
+      <property name="geometry">
+       <rect>
+        <x>830</x>
+        <y>260</y>
+        <width>231</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblElementCount">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>550</y>
+        <width>231</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Count</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblAccuracy">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>590</y>
+        <width>231</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Accuracy</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnBackHome">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>51</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>⬅</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnDeleteBook">
+      <property name="geometry">
+       <rect>
+        <x>956</x>
+        <y>120</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Delete Book</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1104</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
