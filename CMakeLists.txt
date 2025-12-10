@@ -13,11 +13,14 @@ find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets Network)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Network)
 
 set(PROJECT_SOURCES
-        main.cpp
+    main.cpp
         mainwindow.cpp
         mainwindow.h
+        fragment.h
+        memoryitem.h
         mainwindow.ui
-)
+        resources.qrc
+    )
 
 # Qt 6 uses qt_add_executable
 # Qt 5 uses add_executable
